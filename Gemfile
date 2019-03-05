@@ -60,7 +60,7 @@ end
 
 group :production do
   #Use the PostgreSQL gem for Hiroku production servers
-  gem 'pg', '0.18.4'
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
