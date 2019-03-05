@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root 'pages#home'
   get 'about', to: 'pages#about'
   get 'blog/pages', to: 'blog#pages'
+
+  # resources gives us all CRUD functions as well as Show   
+  resources :articles
 end
