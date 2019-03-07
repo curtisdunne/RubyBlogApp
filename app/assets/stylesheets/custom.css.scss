@@ -75,3 +75,7 @@ $navbar-default-bg: #BDD3D4 !default;
   float: left;
   margin-left: 15px;
 }
+
+.card-header, .bg-danger {
+    background-color: pink;
+}
