@@ -1,5 +1,18 @@
-<h1>Welcome Home</h1>
-<%= link_to 'Alpha Blog', articles_path %> | <%= link_to 'About', about_path %>
-<br/>
-<br/>
-<%= image_tag('blog.jpg') %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-md-offset-2">
+      <h1 class="blog_h1">AlphaBlog</h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="center jumbotron col-md-12 col-md-offset-2">
+      <div class="homepage_image">
+        <%= image_tag("blog.jpeg", :alt => "BLOG") %>
+      </div>
+      <div class="center">
+        <%= link_to 'Sign up', "#", class: "btn btn-primary btn-xlarge" %>
+      </div>
+    </div>
+  </div>
+</div>
