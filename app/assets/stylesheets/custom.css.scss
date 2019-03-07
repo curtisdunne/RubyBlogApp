@@ -98,9 +98,25 @@ a:hover {
   padding-top: 15px;
 }
 
+.card-padding {
+  padding: 12px;
+  margin: 10px;
+  border: 1px solid black;
+}
+
 .article-actions {
   border-top: 1px solid teal;
   padding-top: 5px;
+}
+
+.article-title {
+  padding-left: 10px;
+  font-size: 1.8em;
+}
+
+.article-body {
+  padding-left: 10px;
+  color: gray;
 }
 
 .btn-edit {
