@@ -79,3 +79,47 @@ $navbar-default-bg: #BDD3D4 !default;
 .card-header, .bg-danger {
     background-color: pink;
 }
+
+a {
+  color: #0B9BA8;
+}
+
+a:hover {
+  color: #777
+}
+
+.description-padding {
+  padding-top: 10px;
+}
+
+.card {
+  background-color: white;
+  color: #0B9BA8;
+  padding-top: 15px;
+}
+
+.article-actions {
+  border-top: 1px solid teal;
+  padding-top: 5px;
+}
+
+.btn-edit {
+  color: white;
+  background-color: gray;
+  float: left;
+  margin: 6px;
+}
+
+.btn-delete {
+  color: white;
+  background-color: red;
+  float: left;
+  margin: 6px;
+}
+
+.btn-view {
+  color: white;
+  background-color: green;
+  float: left;
+  margin: 6px;
+}
