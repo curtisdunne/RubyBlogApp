@@ -1,7 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>AlphaBlog</title>
+    <div class="center">
+      <title>AlphaBlog</title>
+      <% if logged_in? %>
+        <h5 class="admin center">
+          <% if current_user.is_admin? %>
+            Admin
+            <% end %>
+        </h5>
+      <% end %>
+    </div>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,6 +21,7 @@
 
   <body>
     <%= render 'layouts/navigation' %>
+
     <%= render 'layouts/messages' %>
 
     <div class="container">
@@ -18,7 +29,7 @@
     </div>
 
     <%# <%= debug(params) if Rails.env.development? %>
-  
+
     <%= render 'layouts/footer' %>
   </body>
 </html>
