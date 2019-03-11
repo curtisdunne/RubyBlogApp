@@ -10,9 +10,11 @@
       <div class="homepage_image">
         <%= image_tag("blog.jpeg", :alt => "BLOG") %>
       </div>
-      <div class="center">
-        <%= link_to 'Sign up', "#", class: "btn btn-primary btn-xlarge" %>
-      </div>
+      <% if !logged_in? %>
+        <div class="center">
+          <%= link_to 'Sign up', signup_path, class: "btn btn-primary btn-xlarge" %>
+        </div>
+      <% end %>
     </div>
   </div>
 </div>
