@@ -1,7 +1,8 @@
 <h1 align="center">All AlphaBloggers</h1>
 
 <div align="center">
-  <%= will_paginate %>
+  <%= will_paginate @users, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
+
   <% @users.each do |user| %>
     <ul class="listing">
       <div class="row">
@@ -15,4 +16,7 @@
       </div>
     </ul>
   <% end %>
+
+  <%= will_paginate @users, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
+
 </div>

@@ -8,12 +8,8 @@
 
 <h4 align="center"><%= @user.username %>'s Articles</h4>
 
-<div align="center">
-  <%= will_paginate @user_articles %>
-</div>
+<%= will_paginate @user_articles, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
 
 <%= render 'articles/article', obj: @user_articles %>
 
-<div align="center">
-  <%= will_paginate @user_articles %>
-</div>
+<%= will_paginate @user_articles, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
