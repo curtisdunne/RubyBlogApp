@@ -39,7 +39,7 @@ $navbar-default-bg: #BDD3D4 !default;
 }
 
 .btn-xlarge:hover {
-    background-color: orange;
+  background-color: orange;
 }
 
 .homepage_image img {
@@ -77,7 +77,7 @@ $navbar-default-bg: #BDD3D4 !default;
 }
 
 .card-header, .bg-danger {
-    background-color: pink;
+  background-color: pink;
 }
 
 a {
@@ -153,4 +153,26 @@ a:hover {
 
 .img-circle {
   border-radius: 50%;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #000;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: white;
+    background-color: #0B9BA8;
+    border-color: #ddd;
+}
+
+.pagination > .page-item.active > .page-link {
+  color: white;
+  background-color: #0B9BA8;
+  border-color:white;
 }
