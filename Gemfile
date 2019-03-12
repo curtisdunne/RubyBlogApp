@@ -18,6 +18,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'hirb', '0.7.3'
 
 gem 'bootstrap', '~> 4.3.1'
+gem 'bootstrap-sass'
 gem 'jquery-rails'
 
 # Use CoffeeScript for .coffee assets and views
@@ -32,7 +33,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'will_paginate', '3.1.5'
-gem 'bootstrap-will_paginate', '1.0.0'
+# gem 'bootstrap-will_paginate', '1.0.0'
 gem 'will_paginate-bootstrap4'
 
 # Use ActiveStorage variant
