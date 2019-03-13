@@ -158,6 +158,10 @@ a:hover {
   padding-left: 0px;
 }
 
+.list-bg {
+  background-color: #F5FFFB;
+}
+
 .img-circle {
   border-radius: 50%;
 }
@@ -195,6 +199,10 @@ a:hover {
   text-transform: uppercase;
   letter-spacing: -1px;
   font-weight: bold;
+}
+
+.badge-center a {
+  color: white;
 }
 
 .badge a {

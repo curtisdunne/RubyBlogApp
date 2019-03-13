@@ -1,5 +1,11 @@
 <h3 align="center"><%= "Category: " + @category.name %></h3>
 
+<div align="center">
+  <% if logged_in? && current_user.is_admin? %>
+    <div class="badge"><%= link_to "Edit Category Name", edit_category_path(@category) %></div>
+  <% end %>
+</div>
+
 <%= will_paginate @category_articles, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
 
 <%= render 'articles/article', obj: @category_articles %>
