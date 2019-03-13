@@ -1,0 +1,7 @@
+<h3 align="center"><%= "Category: " + @category.name %></h3>
+
+<%= will_paginate @category_articles, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
+
+<%= render 'articles/article', obj: @category_articles %>
+
+<%= will_paginate @category_articles, list_classes: %w(pagination justify-content-center), class:"pg-teal" %>
