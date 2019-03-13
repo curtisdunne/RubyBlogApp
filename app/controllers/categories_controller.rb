@@ -1,4 +1,5 @@
 class CategoriesController < ApplicationController
+  before_action :require_user
   before_action :require_admin, except: [:index, :show]
 
   def index
@@ -36,7 +37,7 @@ class CategoriesController < ApplicationController
       redirect_to category_path(@category)
     else
       render 'edit'
-    end 
+    end
   end
 
   private
